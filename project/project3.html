@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard | My Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <div class="project-container">
+        <a href="../index.html#projects" class="back-button">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>Weather Dashboard</h1>
+            <p>Real-time weather information and forecasts at your fingertips</p>
+        </div>
+
+        <div class="project-description">
+            <h2>Project Overview</h2>
+            <p>A responsive weather dashboard that provides current conditions, extended forecasts, and severe weather alerts using real-time data from weather APIs.</p>
+        </div>
+
+        <!-- Weather Dashboard Widget -->
+        <div class="weather-dashboard">
+            <div class="weather-controls">
+                <div class="search-container">
+                    <input type="text" id="cityInput" placeholder="Enter city name..." class="search-input">
+                    <button onclick="searchWeather()" class="search-btn">Search</button>
+                    <button onclick="getLocationWeather()" class="location-btn">📍 Use My Location</button>
+                </div>
+                <div class="unit-toggle">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="unitToggle" onchange="toggleTemperatureUnit()">
+                        <span class="toggle-slider"></span>
+                        <span class="toggle-text">°C / °F</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="weather-display">
+                <div class="current-weather" id="currentWeather">
+                    <div class="weather-placeholder">
+                        <p>Enter a city to see current weather data</p>
+                    </div>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="detail-card">
+                        <h4>Humidity</h4>
+                        <div class="detail-value" id="humidity">--%</div>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Wind Speed</h4>
+                        <div class="detail-value" id="windSpeed">-- km/h</div>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Pressure</h4>
+                        <div class="detail-value" id="pressure">-- hPa</div>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Visibility</h4>
+                        <div class="detail-value" id="visibility">-- km</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecastContainer">
+                    <div class="forecast-placeholder">
+                        <p>5-day forecast will appear here</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-chart">
+                <h3>Temperature Trend</h3>
+                <div class="chart-container">
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h2>Technologies & APIs</h2>
+            <div class="tech-stack">
+                <span class="tech-item">JavaScript</span>
+                <span class="tech-item">OpenWeather API</span>
+                <span class="tech-item">Chart.js</span>
+                <span class="tech-item">Geolocation API</span>
+                <span class="tech-item">Local Storage</span>
+                <span class="tech-item">Responsive Design</span>
+            </div>
+        </div>
+
+        <div class="demo-links">
+            <a href="https://weather-dashboard-demo.com" class="demo-button" target="_blank">View Full Demo</a>
+            <a href="https://github.com/yourusername/weather-app" class="demo-button secondary" target="_blank">Source Code</a>
+        </div>
+    </div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../script.js"></script>
+    <script src="project3.js"></script>
+</body>
+</html>

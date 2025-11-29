@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App | My Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <div class="project-container">
+        <a href="../index.html#projects" class="back-button">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>Task Management App</h1>
+            <p>A collaborative productivity tool for teams and individuals</p>
+        </div>
+
+        <div class="project-description">
+            <h2>About This Project</h2>
+            <p>This task management application helps teams organize their work, track progress, and collaborate effectively. Built with a focus on user experience and performance.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Task Creation</h3>
+                <p>Create and organize tasks with deadlines and priorities</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Team Collaboration</h3>
+                <p>Assign tasks and collaborate with team members in real-time</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Progress Tracking</h3>
+                <p>Visualize progress with charts and analytics</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <h3>Notifications</h3>
+                <p>Get real-time notifications for updates and deadlines</p>
+            </div>
+        </div>
+
+        <!-- Interactive Task Demo -->
+        <div class="task-demo">
+            <h2>Interactive Demo</h2>
+            <div class="task-board">
+                <div class="task-column">
+                    <h4>To Do</h4>
+                    <div class="task-list" id="todo-list">
+                        <div class="task-item" draggable="true">Design user dashboard</div>
+                        <div class="task-item" draggable="true">Implement drag & drop</div>
+                    </div>
+                    <input type="text" id="new-task" placeholder="Add new task...">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                <div class="task-column">
+                    <h4>In Progress</h4>
+                    <div class="task-list" id="progress-list">
+                        <div class="task-item" draggable="true">Create task model</div>
+                    </div>
+                </div>
+                <div class="task-column">
+                    <h4>Done</h4>
+                    <div class="task-list" id="done-list">
+                        <div class="task-item" draggable="true">Set up project structure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Vue.js</span>
+                <span class="tech-item">Firebase</span>
+                <span class="tech-item">Node.js</span>
+                <span class="tech-item">MongoDB</span>
+                <span class="tech-item">Socket.io</span>
+                <span class="tech-item">Chart.js</span>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Try It Out</h2>
+            <p>Experience the task management app with a live demo</p>
+            <div class="demo-buttons">
+                <a href="https://taskapp-demo.com" class="demo-button" target="_blank">Live Demo</a>
+                <a href="https://github.com/Jedfromanotherworld/task-app" class="demo-button secondary" target="_blank">Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="project2.js"></script>
+</body>
+</html>

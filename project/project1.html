@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website | My Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <div class="project-container">
+        <a href="../index.html#projects" class="back-button">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>E-Commerce Website</h1>
+            <p>A modern, responsive e-commerce platform built with cutting-edge technologies</p>
+        </div>
+
+        <div class="project-details">
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>This e-commerce platform provides a seamless shopping experience with features like product filtering, user authentication, shopping cart functionality, and secure payment processing.</p>
+                
+                <h3>Key Features</h3>
+                <ul class="features-list">
+                    <li>User registration and authentication</li>
+                    <li>Product catalog with advanced filtering</li>
+                    <li>Shopping cart and wishlist functionality</li>
+                    <li>Secure payment gateway integration</li>
+                    <li>Order tracking and history</li>
+                    <li>Admin dashboard for inventory management</li>
+                </ul>
+            </div>
+
+            <div class="project-info">
+                <h3>Project Details</h3>
+                <p><strong>Duration:</strong> 3 months</p>
+                <p><strong>Client:</strong> Fashion Retail Co.</p>
+                <p><strong>Status:</strong> Completed</p>
+                
+                <h4>Technologies Used</h4>
+                <div class="tech-stack">
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">MongoDB</span>
+                    <span class="tech-item">Express</span>
+                    <span class="tech-item">Stripe API</span>
+                    <span class="tech-item">AWS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-item">
+                <h4>Homepage</h4>
+                <div class="gallery-placeholder">
+                    <span>Homepage Screenshot</span>
+                </div>
+                <button class="view-btn" data-image="homepage">View Larger</button>
+            </div>
+            <div class="gallery-item">
+                <h4>Product Page</h4>
+                <div class="gallery-placeholder">
+                    <span>Product Page Screenshot</span>
+                </div>
+                <button class="view-btn" data-image="product">View Larger</button>
+            </div>
+            <div class="gallery-item">
+                <h4>Checkout Process</h4>
+                <div class="gallery-placeholder">
+                    <span>Checkout Screenshot</span>
+                </div>
+                <button class="view-btn" data-image="checkout">View Larger</button>
+            </div>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="Project Screenshot">
+                <p id="modalCaption"></p>
+            </div>
+        </div>
+
+        <div class="demo-links">
+            <a href="https://ecommerce-demo.com" class="demo-button" target="_blank">View Live Demo</a>
+            <a href="https://github.com/Jedfromanotherworld/ecommerce-project" class="demo-button secondary" target="_blank">View Source Code</a>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="project1.js"></script>
+</body>
+</html>
